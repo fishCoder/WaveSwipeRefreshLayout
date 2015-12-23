@@ -388,6 +388,9 @@ public class WaveSwipeRefreshLayout extends ViewGroup {
                     mWaterWave.setProgress((int)animation.getAnimatedValue());
                 }
             });
+            if(mListener != null){
+                mListener.onLoad();
+            }
             valueAnimator.start();
         }else {
             ValueAnimator valueAnimator = ValueAnimator.ofInt(100,80,60,40,20);
@@ -918,20 +921,7 @@ public class WaveSwipeRefreshLayout extends ViewGroup {
 
                 if(mLoading){
                     if (mWaterWave.getVisibility() != View.VISIBLE) {
-                        mWaterWave.setVisibility(View.VISIBLE);
-                        ValueAnimator valueAnimator = ValueAnimator.ofInt(20,40,60,80,100);
-                        valueAnimator.setDuration(500);
-                        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                            @Override
-                            public void onAnimationUpdate(ValueAnimator animation) {
-                                mWaterWave.setProgress((int)animation.getAnimatedValue());
-                            }
-                        });
-                        valueAnimator.start();
-
-                        if(mListener != null){
-                            mListener.onLoad();
-                        }
+                        setLoading(mLoading);
                     }
                 }
                 break;
