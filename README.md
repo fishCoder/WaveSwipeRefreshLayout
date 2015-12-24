@@ -1,6 +1,6 @@
 # WaveSwipeRefreshLayout
 
-'''
+```
 	<com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
         android:id="@+id/wave_layout"
         android:layout_width="match_parent"
@@ -15,10 +15,10 @@
             />
 
     </com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout>
-    '''
+```
 
 
-'''
+```
 waveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -42,7 +42,7 @@ waveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefresh
 
 
     });
-        '''
+```
 
 
 ### License
