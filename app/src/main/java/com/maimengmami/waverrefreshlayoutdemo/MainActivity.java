@@ -122,9 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            Random random = new Random();
-
-            ((ViewHolder)holder).textView.setText("txt"+random.nextInt());
+            ((ViewHolder)holder).textView.setText("txt"+position);
         }
 
 

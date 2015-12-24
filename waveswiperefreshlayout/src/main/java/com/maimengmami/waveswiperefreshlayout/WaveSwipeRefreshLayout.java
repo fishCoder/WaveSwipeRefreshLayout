@@ -84,7 +84,27 @@ public class WaveSwipeRefreshLayout extends ViewGroup {
     private static final int DEFAULT_CIRCLE_TARGET = 64;
 
     private View mTarget; // the target of the gesture
-    private OnRefreshListener mListener;
+    private OnRefreshListener mListener = new OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+
+        }
+
+        @Override
+        public void onLoad() {
+
+        }
+
+        @Override
+        public boolean canLoadMore() {
+            return true;
+        }
+
+        @Override
+        public boolean canRefresh() {
+            return true;
+        }
+    };
     private boolean mRefreshing = false;
     private boolean mLoading = false;
     private int mTouchSlop;
