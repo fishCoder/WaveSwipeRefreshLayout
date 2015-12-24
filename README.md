@@ -1,8 +1,49 @@
-support to load more
+# WaveSwipeRefreshLayout
+
+'<com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
+        android:id="@+id/wave_layout"
+        android:layout_width="match_parent"
+        app:above_wave_color="@color/material_deep_teal_200"
+        app:blow_wave_color="@color/material_deep_teal_500"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout>'
+
+
+'waveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                waveSwipeRefreshLayout.setRefreshing(false);
+            }
+
+            @Override
+            public void onLoad() {
+               waveSwipeRefreshLayout.setLoading(false);
+            }
+
+            @Override
+            public boolean canLoadMore() {
+                return true;
+            }
+
+            @Override
+            public boolean canRefresh() {
+                return true;
+            }
+
+
+        });'
+
 
 ### License
 
-progress-activity is available under the [MIT](http://opensource.org/licenses/MIT) licence.
+WaveSwipeRefreshLayout is available under the [MIT](http://opensource.org/licenses/MIT) licence.
 
 ```
 The MIT License (MIT)

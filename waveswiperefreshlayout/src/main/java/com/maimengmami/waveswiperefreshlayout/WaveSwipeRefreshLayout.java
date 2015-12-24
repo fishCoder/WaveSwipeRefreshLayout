@@ -751,7 +751,7 @@ public class WaveSwipeRefreshLayout extends ViewGroup {
             mReturningToStart = false;
         }
 
-        if (mRefreshing || mReturningToStart || mLoading){
+        if (mRefreshing || mReturningToStart || (mLoading && mWaterWave.getVisibility()==VISIBLE)){
             return false;
         }
 
@@ -801,8 +801,6 @@ public class WaveSwipeRefreshLayout extends ViewGroup {
                         }
                     }
                 }
-
-
 
                 break;
 
