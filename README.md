@@ -1,5 +1,7 @@
 # WaveSwipeRefreshLayout
 
+![Alt text](https://github.com/fishCoder/WaveSwipeRefreshLayout/blob/master/abc.gif)
+
 ```
 	<com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
         android:id="@+id/wave_layout"
