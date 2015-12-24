@@ -1,6 +1,7 @@
 # WaveSwipeRefreshLayout
 
-'<com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
+'''
+	<com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
         android:id="@+id/wave_layout"
         android:layout_width="match_parent"
         app:above_wave_color="@color/material_deep_teal_200"
@@ -13,10 +14,12 @@
             android:layout_height="match_parent"
             />
 
-    </com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout>'
+    </com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout>
+    '''
 
 
-'waveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefreshListener() {
+'''
+waveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 waveSwipeRefreshLayout.setRefreshing(false);
@@ -38,7 +41,8 @@
             }
 
 
-        });'
+    });
+        '''
 
 
 ### License
