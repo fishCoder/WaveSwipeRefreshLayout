@@ -46,6 +46,11 @@ waveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefresh
     });
 ```
 
+##### compile
+
+```
+compile 'com.mamengmami.android:waveswiperefreshlayout:1.0.0'
+```
 
 ### License
 
